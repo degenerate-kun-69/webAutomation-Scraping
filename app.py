@@ -5,9 +5,9 @@ from wtforms.validators import InputRequired, Email, Length
 from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '6Lfkwe8pAAAAACTvtSA3tEistOxeU4GG2RhXiuC7'
-app.config['RECAPTCHA_PUBLIC_KEY'] = '6Lfkwe8pAAAAAHJtVwA-5G49-cMzr4dCAbkO-m_0'
-app.config['RECAPTCHA_PRIVATE_KEY'] = '6Lfkwe8pAAAAACTvtSA3tEistOxeU4GG2RhXiuC7'
+app.config['SECRET_KEY'] = 'captcha-secret-key'
+app.config['RECAPTCHA_PUBLIC_KEY'] = 'captcha-public-key'
+app.config['RECAPTCHA_PRIVATE_KEY'] = 'captcha-secret-key'
 bootstrap = Bootstrap(app)
 
 # Mock user database
